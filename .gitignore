@@ -1,0 +1,13 @@
+#api key is in here, keep it safe
+config/default.json
+client_secret.json
+
+#dont include node modules
+node_modules/
+
+#swap files
+*.swp
+
+#folders used to store pictures
+attachments/
+files/
