@@ -242,31 +242,3 @@ function getMessages( auth, labelIds, q, maxResults ){
 		})
 	})
 }
-
-//				gmail.users.messages.get({
-//					auth: auth,
-//					userId: 'me',
-//					id: obj.id
-//				}, function (err, response){
-//					if (err) {
-//						console.log('couldnt get message: ' + err)
-//						return
-//					}
-//					response.payload.parts.map( obj => {
-//						//there will either be a data or attachmentId
-//						if ( obj.body.data ){
-//							mail_obj['data'].push(obj.body.data)
-//							var buf = new Buffer(obj.body.data, 'base64'); // Ta-da
-//							console.log('decoding: ',buf.toString())
-//							
-//						}
-//						else {
-//							gmail.users.messages.attachments.get({
-//								auth: auth,
-//								userId: 'me',
-//								messageId: mail_obj['id'],
-//								id: obj.body.attachmentId
-//							}, function (err, response) {
-//								mail_obj['data'].push(response.data)
-//							})
-//						}
